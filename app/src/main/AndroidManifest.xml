@@ -20,7 +20,8 @@
         <activity
             android:name=".ConfirmOff"
             android:theme="@style/AppTheme.custom" />
-        <activity android:name=".Filter"></activity>
+        <activity android:name=".Filter" />
+        <activity android:name=".classes" android:windowSoftInputMode="adjustPan"></activity>
     </application>
 
 </manifest>
