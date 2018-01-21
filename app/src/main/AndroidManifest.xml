@@ -9,19 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main">
+        <activity android:name=".Main" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DownOn" />
-        <activity
+        <activity android:name=".DownOn" android:screenOrientation="portrait" />
+        <activity android:screenOrientation="portrait"
             android:name=".ConfirmOff"
             android:theme="@style/AppTheme.custom" />
         <activity android:name=".Filter" />
-        <activity android:name=".classes" android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".classes" android:windowSoftInputMode="adjustPan" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
