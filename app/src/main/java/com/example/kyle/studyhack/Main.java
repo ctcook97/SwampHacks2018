@@ -17,10 +17,17 @@ public class Main extends AppCompatActivity {
     ImageButton Filter;
     public static boolean searching = false;
     @Override
+    protected void onResume()
+    {
+        super.onResume();
+        Intent classes = new Intent(getApplicationContext(), classes.class);
+        startActivity(classes);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Intent classes = new Intent(getApplicationContext(), StartPage.class);
-        startActivity(classes);
+
         /*setContentView(R.layout.activity_main);
         Down = (Switch)findViewById(R.id.Down);
         Down.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
