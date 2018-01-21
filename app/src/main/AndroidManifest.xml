@@ -21,7 +21,11 @@
             android:name=".ConfirmOff"
             android:theme="@style/AppTheme.custom" />
         <activity android:name=".Filter" />
-        <activity android:name=".classes" android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".classes"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ContactInfo" />
+        <activity android:name=".GroupCreate"></activity>
     </application>
 
 </manifest>
