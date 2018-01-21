@@ -18,7 +18,9 @@ public class Main extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        Intent classes = new Intent(getApplicationContext(), classes.class);
+        startActivity(classes);
+        /*setContentView(R.layout.activity_main);
         Down = (Switch)findViewById(R.id.Down);
         Down.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -38,6 +40,6 @@ public class Main extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), Filter.class));
             }
-        });
+        });*/
     }
 }

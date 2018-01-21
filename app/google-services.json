@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "73386675815",
+    "firebase_url": "https://swamphacks2018-f81e5.firebaseio.com",
+    "project_id": "swamphacks2018-f81e5",
+    "storage_bucket": "swamphacks2018-f81e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73386675815:android:d56108a91ad57316",
+        "android_client_info": {
+          "package_name": "com.example.matthannan.swamphacks2018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "73386675815-k1ej97v7jt1l4reu7qrs5i7u1r6124ms.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.matthannan.swamphacks2018",
+            "certificate_hash": "07f6c32e43e83569c08992250a8fcdba756d9e01"
+          }
+        },
+        {
+          "client_id": "73386675815-5jt4k0vqof4mtbol8kil5uuvsu3sm317.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAayI9epgSi80opKXPK6NutIGGNLTCZ8kE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "73386675815-5jt4k0vqof4mtbol8kil5uuvsu3sm317.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73386675815:android:dd3d2aa9bd208ab0",
+        "android_client_info": {
+          "package_name": "com.example.kyle.studyhack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "73386675815-q4dgu59nmfq7rblm21i8jfbetfnsfde9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kyle.studyhack",
+            "certificate_hash": "96241787428938578680f12c5acfb9ddb10ede93"
+          }
+        },
+        {
+          "client_id": "73386675815-5jt4k0vqof4mtbol8kil5uuvsu3sm317.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAayI9epgSi80opKXPK6NutIGGNLTCZ8kE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "73386675815-5jt4k0vqof4mtbol8kil5uuvsu3sm317.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
