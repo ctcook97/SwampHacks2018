@@ -1,5 +1,6 @@
 package com.example.kyle.studyhack;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -46,7 +47,7 @@ public class classes extends AppCompatActivity {
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, classes);
         final AutoCompleteTextView add=(AutoCompleteTextView) findViewById(R.id.add);
-        String[] classList=new String[]{"COT3100","IUF1000", "MAC2312"};
+        String[] classList = {"COT3100","IUF1000", "MAC2312"};
         myClasses = new ArrayList<String>();
         headcount = new ArrayList<Integer>();
         leaderNames = new ArrayList<String>();
@@ -74,34 +75,35 @@ public class classes extends AppCompatActivity {
                 final String classId = add.getText().toString();
 
                 database.child(classId).addChildEventListener(new ChildEventListener() {
-                   @Override
-                   public void onChildAdded(DataSnapshot dataSnapshot, String prevChildKey) {
-                       Log.e("Bruh", "Key: " + classId);
-                       int i = myClasses.indexOf(classId);
-                       headcount.set(i, headcount.get(i)+1);
-                       updateClass(i);
-                   }
-                   @Override
-                   public void onChildChanged(DataSnapshot dataSnapshot, String prevChildKey) {}
+                                                                  @Override
+                                                                  public void onChildAdded(DataSnapshot dataSnapshot, String prevChildKey) {
+                                                                      Log.e("Bruh", "Key: " + classId);
+                                                                      int i = myClasses.indexOf(classId);
+                                                                      headcount.set(i, headcount.get(i)+1);
+                                                                      updateClass(i);
+                                                                  }
+                                                                  @Override
+                                                                  public void onChildChanged(DataSnapshot dataSnapshot, String prevChildKey) {}
 
-                   @Override
-                   public void onChildRemoved(DataSnapshot dataSnapshot) {
-                       int i = myClasses.indexOf(dataSnapshot.getKey());
-                       headcount.set(i, headcount.get(i)-1);
-                       updateClass(i);
-                   }
+                                                                  @Override
+                                                                  public void onChildRemoved(DataSnapshot dataSnapshot) {
+                                                                      int i = myClasses.indexOf(dataSnapshot.getKey());
+                                                                      headcount.set(i, headcount.get(i)-1);
+                                                                      updateClass(i);
+                                                                  }
 
-                   @Override
-                   public void onChildMoved(DataSnapshot dataSnapshot, String prevChildKey) {}
+                                                                  @Override
+                                                                  public void onChildMoved(DataSnapshot dataSnapshot, String prevChildKey) {}
 
-                   @Override
-                   public void onCancelled(DatabaseError databaseError) {
-                   }
-                                               }
-                    );
+                                                                  @Override
+                                                                  public void onCancelled(DatabaseError databaseError) {
+                                                                  }
+                                                              }
+                );
                 add.setText("");
-                images.get(images.size()-1).setVisibility(View.VISIBLE);
-                images.remove(images.size()-1);
+                //images.get(images.size()-1).setVisibility(View.VISIBLE);
+                //images.remove(images.size()-1);
+                //poor design for hard coding
             }
         });
 
@@ -112,9 +114,11 @@ public class classes extends AppCompatActivity {
         {
             @Override
             public void onItemClick(AdapterView<?> adapter, View v, int position,
-                                    long arg3)
+                                    long id)
             {
-                String value = (String)adapter.getItemAtPosition(position);
+                Intent myIntent = new Intent(getApplicationContext(), ContactInfo.class);
+                startActivityForResult(myIntent,0);
+                //String value = (String)adapter.getItemAtPosition(position);
                 // assuming string and if you want to get the value on click of list item
                 // do what you intend to do on click of listview row
             }
