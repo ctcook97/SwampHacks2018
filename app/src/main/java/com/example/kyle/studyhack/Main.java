@@ -1,4 +1,5 @@
 package com.example.kyle.studyhack;
+import android.support.v4.app.FragmentActivity;
 
 import android.content.Intent;
 import android.media.Image;
@@ -16,10 +17,17 @@ public class Main extends AppCompatActivity {
     ImageButton Filter;
     public static boolean searching = false;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onResume()
+    {
+        super.onResume();
         Intent classes = new Intent(getApplicationContext(), classes.class);
         startActivity(classes);
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
         /*setContentView(R.layout.activity_main);
         Down = (Switch)findViewById(R.id.Down);
         Down.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
