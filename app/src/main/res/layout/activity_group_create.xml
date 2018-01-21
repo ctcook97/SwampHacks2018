@@ -6,4 +6,27 @@
     android:layout_height="match_parent"
     tools:context="com.example.kyle.studyhack.GroupCreate">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="175dp"
+        android:layout_height="244dp"
+        app:srcCompat="@drawable/west"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="175dp"
+        android:layout_height="244dp"
+        app:srcCompat="@drawable/marston"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="296dp" />
 </android.support.constraint.ConstraintLayout>

@@ -22,9 +22,6 @@
             android:theme="@style/AppTheme.custom" />
         <activity android:name=".Filter" />
         <activity android:name=".classes" android:windowSoftInputMode="adjustPan" android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".classes"
-            android:windowSoftInputMode="adjustPan" />
         <activity android:name=".ContactInfo" />
         <activity android:name=".GroupCreate"></activity>
     </application>
