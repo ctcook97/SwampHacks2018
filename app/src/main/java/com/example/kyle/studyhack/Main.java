@@ -18,7 +18,7 @@ public class Main extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Intent classes = new Intent(getApplicationContext(), classes.class);
+        Intent classes = new Intent(getApplicationContext(), StartPage.class);
         startActivity(classes);
         /*setContentView(R.layout.activity_main);
         Down = (Switch)findViewById(R.id.Down);
