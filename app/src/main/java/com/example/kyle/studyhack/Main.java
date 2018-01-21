@@ -1,4 +1,5 @@
 package com.example.kyle.studyhack;
+import android.support.v4.app.FragmentActivity;
 
 import android.content.Intent;
 import android.media.Image;
