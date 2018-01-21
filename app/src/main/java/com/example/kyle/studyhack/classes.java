@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.google.firebase.FirebaseApp;
@@ -50,6 +51,13 @@ public class classes extends AppCompatActivity {
         leaderNames = new ArrayList<String>();
         ArrayAdapter<String> dropDownAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_dropdown_item_1line, classList);
+        ImageView p1= (ImageView) findViewById(R.id.p1);
+        ImageView p2= (ImageView) findViewById(R.id.p2);
+        ImageView p3= (ImageView) findViewById(R.id.p3);
+        final ArrayList<ImageView> images=new ArrayList<ImageView>();
+        images.add(p3);
+        images.add(p2);
+        images.add(p1);
 
         FirebaseApp.initializeApp(this);
         database = FirebaseDatabase.getInstance().getReference();
@@ -91,6 +99,8 @@ public class classes extends AppCompatActivity {
                                                }
                     );
                 add.setText("");
+                images.get(images.size()-1).setVisibility(View.VISIBLE);
+                images.remove(images.size()-1);
             }
         });
 
