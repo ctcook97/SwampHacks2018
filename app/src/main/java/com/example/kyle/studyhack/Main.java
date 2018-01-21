@@ -20,7 +20,7 @@ public class Main extends AppCompatActivity {
     protected void onResume()
     {
         super.onResume();
-        Intent classes = new Intent(getApplicationContext(), classes.class);
+        Intent classes = new Intent(getApplicationContext(), StartPage.class);
         startActivity(classes);
     }
 
